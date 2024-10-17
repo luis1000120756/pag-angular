@@ -1,0 +1,134 @@
+body{
+    /*encabezado estilos*/
+    margin: 0;
+    .encabezado {
+        text-align: center;
+        background-color:#ffcc00 ;
+        font-style: italic;/*cambiar tipo de letra*/
+        padding: 10px;
+    }
+    .container-list {
+        display: flex;
+    }
+    ul {
+        list-style-type: none; /* Elimina los puntos de la lista */
+        display: flex;
+    }
+    li {
+        margin-right: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .container2 {
+        width: 30%;
+        text-align: center;
+        font-style: italic;
+    }
+    .container1 {
+        width: 70%;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #888;
+    }
+    .modal-content {
+        margin: 15% auto; /* Margen superior y centrado */
+        padding: 20px;
+        width: 40%;
+        text-align: center;
+        color: whitesmoke;
+        .items {
+            margin-bottom: 10px;
+        }
+    }
+    .modal2 {
+        display: none;
+        position: fixed;
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal2-content {
+        margin: 15% auto; /* Margen superior y centrado */
+        padding: 20px;
+        width: 40%;
+        text-align: center;
+        color: whitesmoke;
+        .items {
+            margin-bottom: 10px;/*espacio entre los elementos verticalmente*/
+        }
+    }
+
+  
+    .boton-semicircular {
+        width: 200px; /* Ancho del botón */
+        height: 50px; /* Altura del botón */
+        border: none; /* Sin borde */
+        border-radius: 25px; /* Bordes semicirculares en los lados */
+        background-color: #ffcc00; /* Color de fondo */
+        color: black; /* Color del texto */
+        font-size: 18px; /* Tamaño de letra */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        transition: background-color 0.3s; /* Transición suave para el cambio de color */
+        margin: 20px;
+    }
+    .close, .close2 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    footer {
+        background-color: #ffcc00;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+    }
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+    .footer-section a {
+        display: block;
+        margin: 5px 0;
+        text-decoration: none;
+        color: #333;
+    }
+    .footer-bottom {
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+    }
+   
+
+}
+

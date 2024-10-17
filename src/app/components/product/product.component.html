@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./product.component.scss">
+</head>
+<body>
+    <div class="encabezado">
+        <header>
+            <h1 class="frase_encabezado">Bienvenidos a la panadería online hecho con amor</h1>
+            <nav> 
+                <div class="container-list">
+                    <ul>
+                        <li><a class="item" href="">Productos</a></li>
+                        <li><a class="item" href="">Contacto</a></li>
+                        <li><a class="item" href="">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </header>
+    </div>
+    <div class="container">
+        <div class="container2">
+            <div class="encabezado-panel">
+                <h1>Hecho con amor</h1>
+                <h3>Un sabor diferente y agradable</h3>
+            </div>
+        
+            <button id="open-modal" class="boton-semicircular">Haz tu pedido ahora</button>
+            <button id="open-modal2" class="boton-semicircular">Registrar</button>
+           
+            <div class="imagenindex">
+                <img width="200px" src="" alt="">
+            </div>
+        </div>
+
+        <div id="modal" class="modal">  
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Inicio de Sesión</h2>
+                <form action="">
+                    <input class="items" type="text" placeholder="Nombre de usuario">
+                    <input class="items" type="password" placeholder="Contraseña">
+                </form>
+                <button id="iniciar-boton" class="boton-semicircular"><a href="home.html">Iniciar</a></button>
+                <button class="boton-semicircular">Registrar</button>
+            </div>
+        </div>
+        
+        <div id="modal2" class="modal2">
+            <div class="modal2-content">
+                <span id="closeModal2" class="close">&times;</span>
+                <h2>Registrarse</h2>
+                <input class="items" type="text" placeholder="Nombre de usuario">
+                <input class="items" type="email" placeholder="Email">
+                <input class="items" type="password" placeholder="Contraseña">
+                <input class="items" type="password" placeholder="Confirmar Contraseña">
+                <button class="boton-semicircular">Registrarse</button>
+            </div>
+        </div>
+        
+        <div class="container1">
+            <img width="1050px" src="https://media.istockphoto.com/id/475263838/es/foto/muchos-mezcl%C3%B3-panes-y-bollos-toma-realizada-desde-arriba.jpg?s=612x612&w=0&k=20&c=KmBEZnxZhaajwHukLR9SblDBQlMvXWKCsPE3WsC0z4Y=" alt="">
+        </div>   
+    </div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>Somos una panadería online dedicada a ofrecer los mejores productos frescos y de calidad.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Email: inf.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociales</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Panadería Online. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    
+    <script>
+        // Get the modal elements
+        const modal = document.getElementById("modal");
+        const modal2 = document.getElementById("modal2");
+        const openModalBtn = document.getElementById("open-modal");
+        const openModal2Btn = document.getElementById("open-modal2");
+        const closeModalBtn = document.getElementById("closeModal");
+        const closeModal2Btn = document.getElementById("closeModal2");  
+
+        openModalBtn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        openModal2Btn.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+        closeModalBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close modal2 when the close button is clicked
+        closeModal2Btn.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        // Close modal if the user clicks anywhere outside of it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            } else if (event.target === modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
